@@ -44,9 +44,9 @@ namespace ContactList.Controllers
         [SwaggerResponse(HttpStatusCode.OK,
             Type = typeof(IEnumerable<Contact>))]
         [Route("~/contacts")]
-        public async Task<IEnumerable<Contact>> Get()
+        public bool Get()
         {
-            return await GetContacts();
+            return true;
         }
 
         /// <summary>
