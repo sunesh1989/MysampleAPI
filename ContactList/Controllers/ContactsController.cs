@@ -26,7 +26,7 @@ namespace ContactList.Controllers
             if (contacts == null)
             {
                 await _storage.Save(new Contact[]{
-                        new Contact { Id = 1, EmailAddress = "barney@contoso.com", Name = "Barney Poland"},
+                        new Contact { Id = 1, EmailAddress = "barney@contoso.com", Name = "test user"},
                         new Contact { Id = 2, EmailAddress = "lacy@contoso.com", Name = "Lacy Barrera"},
                         new Contact { Id = 3, EmailAddress = "lora@microsoft.com", Name = "Lora Riggs"}
                     }
